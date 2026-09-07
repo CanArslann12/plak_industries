@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<title>PLAK INDUSTRIES | Proje Asistanı</title>
+</head>
+<body>
+	<main class="shell">
+		<header class="topbar">
+			<a class="brand" href="/" aria-label="PLAK INDUSTRIES ana sayfa"><span class="brand-mark">P</span><span>PLAK INDUSTRIES</span></a>
+			<div class="topbar-meta"><span class="online-dot"></span><span>PROJE ASİSTANI</span><span class="topbar-rule"></span><span>01 / 01</span></div>
+		</header>
+
+		<section class="intro">
+			<div class="intro-copy">
+				<p class="eyebrow">ENDÜSTRİYEL TASARIM · ÜRÜN GELİŞTİRME</p>
+				<h1>Fikrinizden<br><em>üretime.</em></h1>
+				<p class="intro-text">PLAK INDUSTRIES, teknik fikirlere netlik kazandırır. Projenizin hangi aşamada olduğunu birlikte anlayalım ve doğru sonraki adımı bulalım.</p>
+				<div class="service-line"><span>CAD / CAM</span><span>PROTOTİPLEME</span><span>MENTORLUK</span></div>
+			</div>
+			<div class="intro-index" aria-hidden="true"><span>PI</span><small>STUDIO<br>2026</small></div>
+		</section>
+
+		<section class="workspace">
+			<article class="panel assistant-panel" aria-labelledby="chat-title">
+				<div class="panel-heading"><div><p class="panel-kicker">01 / DİYALOG</p><h2 id="chat-title">Proje asistanı</h2></div><span class="status-pill"><span class="online-dot"></span> HAZIR</span></div>
+				<p class="panel-lede">Projenizi anlatın. İhtiyacınızı netleştirmek için size kısa sorular yönelteceğim.</p>
+				<div id="chat-messages" class="chat-messages" aria-live="polite" aria-label="Sohbet mesajları"><p class="chat-empty">Projenizin hangi aşamada olduğunu anlatarak başlayabilirsiniz.</p></div>
+				<form id="chat-form" class="chat-form"><label class="sr-only" for="chat-message">Mesaj</label><textarea id="chat-message" name="mesaj" placeholder="Mesajınızı yazın..." required></textarea><div class="chat-actions"><span class="chat-hint">Enter ile gönderin</span><button type="submit">Gönder <span aria-hidden="true">↗</span></button><button type="button" id="chat-clear" class="button-secondary">Temizle</button></div><p id="chat-status" role="status"></p></form>
+			</article>
+
+			<aside class="panel lead-panel" aria-labelledby="lead-title">
+				<div class="panel-heading"><div><p class="panel-kicker">02 / İLETİŞİM</p><h2 id="lead-title">Projenizi konuşalım</h2></div><span class="panel-number">PI—02</span></div>
+				<p class="panel-lede">Kısa bilgilerinizi bırakın, ekibimiz ön görüşme için sizinle iletişime geçsin.</p>
+				<form id="lead-form"><label>İsim soyisim<input name="isim" autocomplete="name" placeholder="Adınız soyadınız" required></label><label>Telefon<input name="telefon" autocomplete="tel" placeholder="+90 5xx xxx xx xx" required></label><label>Proje özeti<textarea name="mesaj" placeholder="Fikriniz, mevcut aşamanız veya ihtiyacınız..."></textarea></label><button type="submit" class="wide-button">Ön görüşme talebi gönder <span aria-hidden="true">↗</span></button><p id="form-status" role="status"></p></form>
+			</aside>
+		</section>
+
+		<section class="services" aria-labelledby="services-title"><div class="services-heading"><p class="panel-kicker">03 / KAPSAM</p><h2 id="services-title">İhtiyacınız için<br>doğru başlangıç.</h2></div><div class="service-grid"><div><span>01</span><strong>Endüstriyel tasarım</strong><p>Fikirden işlevsel ürün konseptine.</p></div><div><span>02</span><strong>CAD / CAM</strong><p>Teknik modelleme ve üretim hazırlığı.</p></div><div><span>03</span><strong>Prototipleme</strong><p>Fikri görmeyi ve test etmeyi sağlayan adımlar.</p></div><div><span>04</span><strong>Mentorluk</strong><p>Ürün geliştirme sürecinde teknik yönlendirme.</p></div></div></section>
+
+		<footer><span>© PLAK INDUSTRIES</span><span>ENDÜSTRİYEL TASARIM & ÜRÜN GELİŞTİRME</span><span id="ai-config-status">SİSTEM DURUMU KONTROL EDİLİYOR</span></footer>
+	</main>
+	<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
